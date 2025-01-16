@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Ruta de ejemplo
 app.get('/api/dandadan', (req, res) => {
-    res.json({
+    res.json({ characters: [{
         "id": 1,
         "name": "Momo Ayase",
         "age": "16",
@@ -80,7 +80,7 @@ app.get('/api/dandadan', (req, res) => {
         "age": "Unknown",
         "description": "Also known as a Mantisian. Always has 'dis' at the end of sentences. Powerful punches like a mantis shrimp and cute round eyes are his defining traits.",
         "image_url": "https://dandadan.fandom.com/wiki/File:Dover_Demon.png"
-      });
+      }] });
 });
 
 // Arrancar el servidor
